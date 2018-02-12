@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.alva.system.customviewdemo.Md5Activity">
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:hint="请输入手机唯一码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:textIsSelectable="true"
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="getCodeMd5"
+        android:text="生成授权码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
